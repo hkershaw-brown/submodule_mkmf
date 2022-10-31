@@ -1,4 +1,4 @@
-FC = ifort
-LD = ifort
+FC = gfortran
+LD = gfortran
 
-FFLAGS = -fpp -DTEST
+FFLAGS = -cpp -DTEST
