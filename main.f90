@@ -2,6 +2,8 @@ program pointit
 
 use points, only : point, point_dist
 
+use points, only : test_point_dist
+
 implicit none
 
 type(point) :: x1, x2
@@ -16,5 +18,7 @@ x2%y = 1
 dist = point_dist(x1,x2)
 
 print*, 'dist', dist
+
+call test_point_dist()
 
 end program pointit
