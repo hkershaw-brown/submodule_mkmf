@@ -7,20 +7,12 @@ implicit none
 
 private 
 
-public :: point_dist, test_point_dist, point
+public :: point
 integer :: apple = 3
 
-  interface
-     module function point_dist(a, b) result(distance)
-       type(point), intent(in) :: a, b
-       real :: distance
-     end function point_dist
-  end interface
-
-interface
-  module subroutine test_point_dist
-  end subroutine test_point_dist
-end interface
+#ifdef TEST
+include 'test_interface.inc'
+#endif
 
 contains
 
