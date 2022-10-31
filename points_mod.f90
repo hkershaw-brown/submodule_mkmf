@@ -7,14 +7,20 @@ implicit none
 
 private 
 
-public :: point
+public :: point_dist, test_point_dist, point
 integer :: apple = 3
 
-!DEC$ IF DEFINED(TEST)
-include 'test_interface.inc'
-!DEC$ ENDIF
+  interface
+     module function point_dist(a, b) result(distance)
+       type(point), intent(in) :: a, b
+       real :: distance
+     end function point_dist
+  end interface
 
-!include 'test_interface.inc'
+interface
+  module subroutine test_point_dist
+  end subroutine test_point_dist
+end interface
 
 contains
 

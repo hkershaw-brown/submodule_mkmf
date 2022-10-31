@@ -1,0 +1,4 @@
+FC = gfortran
+LD = gfortran
+
+#FFLAGS = -cpp -DTEST
