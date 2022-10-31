@@ -1,4 +1,4 @@
 FC = nvfortran
 LD = nvfortran
 
-#FFLAGS = -cpp -DTEST
+FFLAGS = -cpp -DTEST

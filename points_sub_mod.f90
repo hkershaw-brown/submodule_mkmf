@@ -10,7 +10,7 @@ module subroutine test_point_dist
 
 print*, 'hello'
 call print_hello()
-print*, 'apple = ', apple
+print*, 'apple = ', apple, add_apple(3)
 
 end subroutine test_point_dist
 

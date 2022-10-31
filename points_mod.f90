@@ -9,7 +9,6 @@ private
 
 public :: point
 integer :: apple = 3
-public :: print_hello
 
 #ifdef TEST
 include 'test_interface.inc'
@@ -22,5 +21,16 @@ subroutine print_hello()
 print*, 'Hello I enjoy cake'
 
 end subroutine print_hello
+
+
+function add_apple(a)
+
+integer, intent(in) :: a
+integer :: add_apple
+
+add_apple = a + apple
+
+end function add_apple
+
 
 end module points
