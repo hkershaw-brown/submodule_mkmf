@@ -10,9 +10,11 @@ private
 public :: point
 integer :: apple = 3
 
-#ifdef TEST
+!DEC$ IF DEFINED(TEST)
 include 'test_interface.inc'
-#endif
+!DEC$ ENDIF
+
+!include 'test_interface.inc'
 
 contains
 

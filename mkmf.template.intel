@@ -1,0 +1,4 @@
+FC = ifort
+LD = ifort
+
+FFLAGS = -fpp -DTEST
