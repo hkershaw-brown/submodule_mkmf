@@ -2,7 +2,7 @@ program pointit
 
 use points, only : point, point_dist
 
-use points, only : test_point_dist
+use points, only : test_point_dist ! this is in the submodule
 
 implicit none
 
